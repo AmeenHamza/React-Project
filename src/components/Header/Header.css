@@ -7,7 +7,7 @@
 }
 
 .navbar.colorChange {
-    background-color: #f6c7f2;
+    background-color: #333333;
 }
 
 .navbar.colorChange .colorChange {
@@ -15,7 +15,7 @@
 }
 
 .navbar.colorChange .nav-menu hr {
-    background-color: #333;
+    background-color: #fff;
 }
 
 .navbar.colorChange .nav-login-cart button {

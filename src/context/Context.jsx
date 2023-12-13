@@ -21,7 +21,7 @@ const ContextProvider = ({ children }) => {
 
     const [state, dispatch] = useReducer(CartReducer, {
         products: [],
-        cart: cartItems ? cartItems : []
+        cart: cartItems ? cartItems : [] // if cartItems found then push cartItems in cart else [] array
     })
 
     localStorage.setItem('cart', JSON.stringify(state.cart));
