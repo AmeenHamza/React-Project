@@ -14,9 +14,9 @@ Before you begin, ensure you have Node.js and npm installed on your machine.
    ```bash
    git clone https://github.com/AmeenHamza/React-Project
 
-cd React-Project
-npm install
-npm run dev
+   cd React-Project
+   npm install
+   npm run dev
 
 ## Features
 Responsive Design: Enjoy a seamless shopping experience on various devices.
