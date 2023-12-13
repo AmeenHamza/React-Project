@@ -14,18 +14,18 @@ Before you begin, ensure you have Node.js and npm installed on your machine.
    ```bash
    git clone https://github.com/AmeenHamza/React-Project
 
-Navigate to the project directory.
-* cd React-Project
-Install dependencies.
-* npm install
-Run the project.
-* npm run dev
+*Navigate to the project directory.
+cd React-Project
+*Install dependencies.
+npm install
+*Run the project.
+npm run dev
 
 ## Features
-* Responsive Design: Enjoy a seamless shopping experience on various devices.
-* Protected Routing: Secure access to different sections of the website.
-* Local Storage: Efficiently manage the shopping cart with persistent data storage.
-* Context API: Leverage React's Context API for streamlined state management.
+Responsive Design: Enjoy a seamless shopping experience on various devices.
+Protected Routing: Secure access to different sections of the website.
+Local Storage: Efficiently manage the shopping cart with persistent data storage.
+Context API: Leverage React's Context API for streamlined state management.
 
 ## Contributing
 We welcome contributions! Feel free to fork the repository, make your changes, and submit a pull request. If you encounter any issues or have suggestions, please create an issue in the repository.
