@@ -14,11 +14,11 @@ Before you begin, ensure you have Node.js and npm installed on your machine.
    ```bash
    git clone https://github.com/AmeenHamza/React-Project
 
-*Navigate to the project directory.
+* Navigate to the project directory.
 cd React-Project
-*Install dependencies.
+* Install dependencies.
 npm install
-*Run the project.
+* Run the project.
 npm run dev
 
 ## Features
