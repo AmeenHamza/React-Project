@@ -27,7 +27,7 @@ const Cart = () => {
             state.cart.map((prod) => (
               <tr key={prod.id}>
                 <td className='cart-img'><img className='img-fluid rounded' src={prod.image} /></td>
-                <td>{prod.title.substring(1,23)}</td>
+                <td>{prod.title.substring(1,23)} ({prod.size})</td>
                 <td className='cart-rating'>
                   <Rating
                     rating={Math.floor(prod.rating.rate)}

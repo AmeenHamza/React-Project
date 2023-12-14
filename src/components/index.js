@@ -12,5 +12,6 @@ import Popular from "./Popular/Popular";
 import Offers from "./Offers/Offers";
 import NewCollections from "./NewCollections/NewCollections";
 import NewsLetter from "./NewsLetter/NewsLetter";
+import RelatedProd from "./RelatedProd/RelatedProd";
 
-export { Contact, Header, Footer, Card, Filter, Rating, CategoryTitle, Login, Signup, Hero, Popular, Offers, NewCollections, NewsLetter }
+export { Contact, Header, Footer, Card, Filter, Rating, CategoryTitle, Login, Signup, Hero, Popular, Offers, NewCollections, NewsLetter, RelatedProd }

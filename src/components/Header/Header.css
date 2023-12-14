@@ -7,19 +7,19 @@
 }
 
 .navbar.colorChange {
-    background-color: #333333;
+    background-color: #fff;
 }
 
 .navbar.colorChange .colorChange {
     height: 20px !important;
 }
 
-.navbar.colorChange .nav-menu hr {
+/* .navbar.colorChange .nav-menu hr {
     background-color: #fff;
-}
+} */
 
 .navbar.colorChange .nav-login-cart button {
-    border: 1px solid #fff;
+    border: 1px solid #7a7a7a;
 }
 
 .nav-menu {

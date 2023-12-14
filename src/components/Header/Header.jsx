@@ -19,7 +19,7 @@ const Header = () => {
 
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
-    if (window.scrollY >= 50) {
+    if (window.scrollY >= 20) {
       setColorchange(true);
     } else {
       setColorchange(false);
@@ -78,10 +78,10 @@ const Header = () => {
           </button>
           <div className={`${isNavExpanded ? 'navigation expanded' : 'navigation'}`}>
             <ul className='nav-menu'>
-              <li onClick={() => { setMenu("shop"); setIsNavExpanded(false); }}><Link className={colorChange && isNavExpanded ? "text-black" : colorChange? "text-white" : "text-black"} to='/'>Home</Link> {menu === "shop" ? (<hr />) : (<></>)}</li>
-              <li onClick={() => { setMenu("mens"); setIsNavExpanded(false); }}><Link className={colorChange && isNavExpanded ? "text-black" : colorChange? "text-white" : "text-black"} to='/products'>Products</Link> {menu === "mens" ? (<hr />) : (<></>)}</li>
-              <li onClick={() => { setMenu("womens"); setIsNavExpanded(false); }}><Link className={colorChange && isNavExpanded ? "text-black" : colorChange? "text-white" : "text-black"} to='/categories'>Categories</Link> {menu === "womens" ? (<hr />) : (<></>)}</li>
-              <li onClick={() => { setMenu("kids"); setIsNavExpanded(false); }}><Link className={colorChange && isNavExpanded ? "text-black" : colorChange? "text-white" : "text-black"} to='/cart'>Cart</Link> {menu === "kids" ? (<hr />) : (<></>)}</li>
+              <li onClick={() => { setMenu("shop"); setIsNavExpanded(false); }}><Link to='/'>Home</Link> {menu === "shop" ? (<hr />) : (<></>)}</li>
+              <li onClick={() => { setMenu("mens"); setIsNavExpanded(false); }}><Link to='/products'>Products</Link> {menu === "mens" ? (<hr />) : (<></>)}</li>
+              <li onClick={() => { setMenu("womens"); setIsNavExpanded(false); }}><Link to='/categories'>Categories</Link> {menu === "womens" ? (<hr />) : (<></>)}</li>
+              <li onClick={() => { setMenu("kids"); setIsNavExpanded(false); }}><Link to='/cart'>Cart</Link> {menu === "kids" ? (<hr />) : (<></>)}</li>
             </ul>
           </div>
           {
@@ -171,13 +171,18 @@ const Header = () => {
               ) : (
                 <Link 
                 to='/login'
-                onClick={() => setMenu("")}
+                onClick={() => setMenu("login")}
                 >
                   <button>Login</button>
                   </Link>
               )
             }
-            <Link to='/cart'><img src={cart_icon} alt="cart_icon" /></Link>
+            <Link 
+            to='/cart'
+            onClick={() => setMenu("kids")}
+            >
+              <img src={cart_icon} alt="cart_icon" />
+              </Link>
             <div className="nav-cart-count">{cart.length}</div>
           </div>
         </Container>

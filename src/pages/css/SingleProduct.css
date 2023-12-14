@@ -9,7 +9,7 @@
     text-transform: capitalize;
 }
 
-.prod-image img{
+.prod-image img {
     width: 300px;
     height: 400px;
     display: block;
@@ -33,7 +33,7 @@
 
 /* Great Stack */
 
-.productdisplay-right-prices{
+.productdisplay-right-prices {
     display: flex;
     margin: 15px 0;
     gap: 30px;
@@ -90,7 +90,7 @@
 .add-btn {
     padding: 14px 30px;
     width: 200px;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
     color: #fff;
     background: #ff4141;
@@ -106,6 +106,10 @@
 
 .productdisplay-right-category span {
     font-weight: 600;
+}
+
+.productdisplay-right-sizes .addSize{
+    border-bottom: 2px solid #ff4141;
 }
 
 @media (max-width : 1000px) {
@@ -124,13 +128,13 @@
         margin: 2% 2%;
     }
 
-    .prod-image img{
+    .prod-image img {
         width: 250px;
         height: 290px;
         margin: 14px auto;
     }
 
-    .productdisplay-right h1{
+    .productdisplay-right h1 {
         font-size: 20px;
     }
 
@@ -185,19 +189,19 @@
         margin: 2% 1%;
     }
 
-    .productdisplay-right h1{
+    .productdisplay-right h1 {
         font-size: 18px;
     }
 }
 
 @media (max-width : 300px) {
-    .prod-image img{
+    .prod-image img {
         width: 200px;
         height: 250px;
         margin: 14px auto;
     }
 
-    .productdisplay-right h1{
+    .productdisplay-right h1 {
         font-size: 17px;
     }
 }
