@@ -115,7 +115,7 @@ const SingleProduct = () => {
                       state.cart.some((check) => check.id === prod.id) ? (
                         <button
                           className='add-btn'
-                          onClick={handleRemove}
+                          onClick={() => user.status ? handleRemove() : notify()}
                         >
                           REMOVE FROM CART
                         </button>

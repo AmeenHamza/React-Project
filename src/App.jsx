@@ -1,12 +1,13 @@
 // Now the App.jsx is our Home page
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import './App.css'
 import { BrowserRouter, Navigate, Link, Route, Routes } from 'react-router-dom'
 import Layout from '../Layout'
 import { Cart, Categories, Home, Products, SingleCategory, SingleProduct } from './pages'
 import { Contact, Footer, Header, Login, Signup } from './components'
 import { useCart } from './context/Context'
+import axios from 'axios'
 
 const App = () => {
 

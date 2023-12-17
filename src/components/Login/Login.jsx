@@ -17,7 +17,7 @@ const Login = () => {
         e.preventDefault();
         const userData = JSON.parse(localStorage.getItem('userInfo'));
         if (email && password) {
-            if (userData.email) {
+            if (userData.email == email) {
                 if (userData.email === email && userData.password === password) {
                     userDispatch({
                         type: 'LOGIN'

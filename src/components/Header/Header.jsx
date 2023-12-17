@@ -19,7 +19,7 @@ const Header = () => {
 
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
-    if (window.scrollY >= 20) {
+    if (window.scrollY >= 5) {
       setColorchange(true);
     } else {
       setColorchange(false);
