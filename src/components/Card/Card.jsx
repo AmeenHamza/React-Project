@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import './Card.css';
 import { Link } from 'react-router-dom';
+import Rating from '../Rating/Rating';
 
 const Card = ({ details }) => {
 
     const [cardText, setCardText] = useState(false);
 
-    useEffect(() =>{
+    useEffect(() => {
         const getWidth = window.innerWidth;
         if (getWidth <= 500) {
             setCardText(true);
         }
-    },[])
+    }, [])
 
     return (
         <div className='item'>
@@ -19,9 +20,9 @@ const Card = ({ details }) => {
             <p>
                 {
                     cardText ? (
-                        details.title.length > 30 ? details.title.substring(0,30) : details.title
+                        details.title.length > 30 ? details.title.substring(0, 30) : details.title
                     ) : (
-                        details.title.length > 45 ? details.title.substring(0,44) : details.title
+                        details.title.length > 45 ? details.title.substring(0, 44) : details.title
                     )
                 }
             </p>
@@ -32,6 +33,18 @@ const Card = ({ details }) => {
                 <div className="item-price-old">
                     ${details.price}
                 </div>
+            </div>
+            <div className="rating-out">
+                <div><Rating rating={Math.floor(details.rating.rate)} /></div>
+                <h5>
+                    {
+                        details.rating.count > 150 ? (
+                            "In stock"
+                        ) : (
+                            "Out of stock"
+                        )
+                    }
+                </h5>
             </div>
         </div>
     )

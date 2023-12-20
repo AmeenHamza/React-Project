@@ -30,12 +30,12 @@
     }
 
     .item {
-        margin: 7% 0;
+        margin: 14% 0;
     }
 }
 
 @media (max-width : 770px) and (min-width : 720px) {
     .item {
-        margin: 7% 0;
+        margin: 10% 0;
     }
 }
