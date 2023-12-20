@@ -27,8 +27,8 @@ const SingleProduct = () => {
     dispatch({
       type: 'ADD_TO_CART',
       payload: {
-        prod : prod,
-        size : first
+        prod: prod,
+        size: first
       }
     })
   }
@@ -98,14 +98,16 @@ const SingleProduct = () => {
                         {
                           sizes.map((size, i) => (
                             <div key={i}
-                            onClick={() => {dispatch({
-                              type : 'CHANGE_SIZE',
-                              payload : {
-                                id : prod.id,
-                                size : size
-                              }
-                            }); setFirst(size)}}
-                            className={size===first? 'addSize' : ''}
+                              onClick={() => {
+                                dispatch({
+                                  type: 'CHANGE_SIZE',
+                                  payload: {
+                                    id: prod.id,
+                                    size: size
+                                  }
+                                }); setFirst(size)
+                              }}
+                              className={size === first ? 'addSize' : ''}
                             >{size}</div>
                           ))
                         }
@@ -124,8 +126,11 @@ const SingleProduct = () => {
                           <button
                             className='add-btn'
                             onClick={() => user.status ? handleAdd() : notify()}
+                            disabled={prod.rating.count <= 150}
                           >
-                            ADD TO CART
+                            {
+                              prod.rating.count <= 150 ? "Out of stock" : "Add to cart"
+                            }
                           </button>
                           <ToastContainer
                             position="top-center"
